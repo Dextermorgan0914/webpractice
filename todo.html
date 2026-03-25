@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meat charset="UTF-8">
+<title>ToDoリスト</title>
+<link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <h1>ToDoリスト</h1>
+<input id="todoInput" type="text" placeholder="やることを入力">
+<button onclick="addTodo()">追加</button>
+<ul id="todoList"></ul>
+<script>
+function addTodo() {
+  let input = document.getElementById("todoInput").value;
+  let list = document.getElementById("todoList");
+  let item = document.createElement("li");
+  item.textContent = input;
+  
+  let deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "削除";
+  deleteBtn.onclick = function() {
+    list.removeChild(item);
+  };
+  
+  item.appendChild(deleteBtn);
+  list.appendChild(item);
+  document.getElementById("todoInput").value = "";
+}
+  
+</script>
+
+
+</body>
+</html>

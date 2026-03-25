@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meat charset="UTF-8">
+<title>天下の大将軍</title>
+<rink rel="stylesheet" href.css">
+</head>
+<body>
+<input id="myInput" type="text" placeholder="名前を入力してな">
+<button id="btn" onclick="pushbutton()">押してみて</button>
+<p id="message">ここが変わるで</p>
+<h1>人にはただ道があるのみ</h1>
+<p>筋トレ</p>
+<p>英語</p>
+<p>IT</p>
+<h2>趣味教えるよ</h2>
+<p>映画</p>
+<p>ドラマ</p>
+<P>漫画</P>
+<link rel="stylesheet" href="style.css">
+<script>
+function pushbutton() {
+  let input = document.getElementById("myInput").value;
+  document.getElementById("message").textContent = input;
+}
+</script>
+</body>

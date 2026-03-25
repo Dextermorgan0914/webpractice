@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Profile</title>
+</head>
+
+<body>
+
+<h1>My Profile</h1>
+
+<p>名前：ダリル</p>
+<p>趣味：筋トレ / 英語</p>
+
+<h2>好きなこと</h2>
+
+<ul>
+<li>Workout</li>
+<li>Studying English</li>
+<li>Watching dramas</li>
+</ul>
+
+</body>
+</html>
