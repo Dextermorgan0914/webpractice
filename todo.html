@@ -13,21 +13,42 @@
 <script>
 function addTodo() {
   let input = document.getElementById("todoInput").value;
+
+  if (input === "") {
+    alert("やることを入力してな！");
+    return;
+  }
+
   let list = document.getElementById("todoList");
   let item = document.createElement("li");
-  item.textContent = input;
-  
+
+  let checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.onclick = function() {
+    if (checkbox.checked) {
+      item.style.textDecoration = "line-through";
+      item.style.color = "gray";
+    } else {
+      item.style.textDecoration = "none";
+      item.style.color = "black";
+    }
+  };
+
+  let text = document.createElement("span");
+  text.textContent = input;
+
   let deleteBtn = document.createElement("button");
   deleteBtn.textContent = "削除";
   deleteBtn.onclick = function() {
     list.removeChild(item);
   };
-  
+
+  item.appendChild(checkbox);
+  item.appendChild(text);
   item.appendChild(deleteBtn);
   list.appendChild(item);
   document.getElementById("todoInput").value = "";
 }
-  
 </script>
 
 
