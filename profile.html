@@ -1,27 +1,150 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meat charset="UTF-8">
-<title>天下の大将軍</title>
-<rink rel="stylesheet" href.css">
+  <meta charset="UTF-8">
+  <title>Profile | Dexter Morgan</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #141414;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+    }
+
+    nav {
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e50914;
+      letter-spacing: 4px;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 0 40px;
+    }
+
+    .tag {
+      color: #e50914;
+      font-size: 13px;
+      letter-spacing: 4px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 56px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      color: #888;
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 60px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+      border-left: 3px solid #e50914;
+      padding-left: 25px;
+    }
+
+    .section h2 {
+      font-size: 13px;
+      color: #e50914;
+      letter-spacing: 4px;
+      margin-bottom: 15px;
+    }
+
+    .section p {
+      color: #ccc;
+      font-size: 16px;
+      line-height: 2;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .tag-item {
+      padding: 8px 16px;
+      border: 1px solid #333;
+      color: #ccc;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 60px;
+      padding: 15px 30px;
+      border: 1px solid #e50914;
+      color: #e50914;
+      text-decoration: none;
+      letter-spacing: 2px;
+      font-size: 13px;
+      transition: all 0.3s;
+    }
+
+    .back:hover {
+      background-color: #e50914;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-<input id="myInput" type="text" placeholder="名前を入力してな">
-<button id="btn" onclick="pushbutton()">押してみて</button>
-<p id="message">ここが変わるで</p>
-<h1>人にはただ道があるのみ</h1>
-<p>筋トレ</p>
-<p>英語</p>
-<p>IT</p>
-<h2>趣味教えるよ</h2>
-<p>映画</p>
-<p>ドラマ</p>
-<P>漫画</P>
-<link rel="stylesheet" href="style.css">
-<script>
-function pushbutton() {
-  let input = document.getElementById("myInput").value;
-  document.getElementById("message").textContent = input;
-}
-</script>
+
+  <nav>
+    <a href="index.html" class="logo">DEXTER</a>
+  </nav>
+
+  <div class="container">
+    <p class="tag">PROFILE</p>
+    <h1>Dexter Morgan</h1>
+    <p class="subtitle">高校生 / Webエンジニア志望</p>
+
+    <div class="section">
+      <h2>ABOUT</h2>
+      <p>None other than<br>おかねほしい</p>
+    </div>
+
+    <div class="section">
+      <h2>SKILLS</h2>
+      <div class="tags">
+        <span class="tag-item">HTML</span>
+        <span class="tag-item">CSS</span>
+        <span class="tag-item">JavaScript</span>
+        <span class="tag-item">React</span>
+        <span class="tag-item">Git / GitHub</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>INTERESTS</h2>
+      <div class="tags">
+        <span class="tag-item">映画</span>
+        <span class="tag-item">ドラマ</span>
+        <span class="tag-item">漫画</span>
+      </div>
+    </div>
+
+    <a href="index.html" class="back">← BACK</a>
+  </div>
+
 </body>
+</html>

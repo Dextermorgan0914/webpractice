@@ -2,49 +2,170 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>はじめてのWeb</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-  <title>はじめてのページ</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <title>Dexter Morgan | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      background-color: #141414;
+      color: #ffffff;
+      font-family: 'Arial', sans-serif;
+      min-height: 100vh;
+    }
 
+    nav {
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to bottom, #000 0%, transparent 100%);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #e50914;
+      letter-spacing: 4px;
+    }
+
+    .hero {
+      padding: 120px 60px;
+      background: linear-gradient(to right, #000 40%, transparent 100%),
+                  url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?w=1400') center/cover;
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .tag {
+      color: #e50914;
+      font-size: 14px;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 72px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      color: #aaa;
+      font-size: 18px;
+      letter-spacing: 2px;
+      margin-bottom: 50px;
+      max-width: 500px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .btn-primary {
+      padding: 15px 35px;
+      background-color: #e50914;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      transition: background 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #f40612;
+    }
+
+    .btn-secondary {
+      padding: 15px 35px;
+      background-color: rgba(255,255,255,0.1);
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      border: 1px solid rgba(255,255,255,0.3);
+      transition: background 0.3s;
+    }
+
+    .btn-secondary:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    .works {
+      padding: 60px;
+    }
+
+    .works h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+      color: #e5e5e5;
+    }
+
+    .cards {
+      display: flex;
+      gap: 15px;
+    }
+
+    .card {
+      background-color: #1f1f1f;
+      padding: 40px 30px;
+      width: 220px;
+      text-decoration: none;
+      color: white;
+      transition: transform 0.3s, background 0.3s;
+      border-top: 3px solid #e50914;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background-color: #2a2a2a;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
+</head>
 <body>
-  <h1>できた！</h1>
-  <p>はじめてのHTMLやで</p>
-  <p>絵文字いけた😂✨</p>
-<button id="btn" onclick="pushButton()">押してみて</button>
-<p id="message">はじめてのHTMLやで</p>
-<script>
-  function pushButton() {
-    document.getElementById("message").textContent = "天下の大将軍ですよ";
-}
-</script>
+
+  <nav>
+    <div class="logo">DEXTER</div>
+  </nav>
+
+  <div class="hero">
+    <p class="tag">WEB ENGINEER</p>
+    <h1>Hello<br>Dexter Morgan</h1>
+    <p class="subtitle">AIだよりな高校生</p>
+    <div class="buttons">
+      <a href="profile.html" class="btn-primary">PROFILE</a>
+      <a href="todo.html" class="btn-secondary">TODO APP</a>
+    </div>
+  </div>
+
+  <div class="works">
+    <h2>Works</h2>
+    <div class="cards">
+      <a href="profile.html" class="card">
+        <h3>Profile</h3>
+        <p>自己紹介ページ</p>
+      </a>
+      <a href="todo.html" class="card">
+        <h3>ToDo App</h3>
+        <p>タスク管理アプリ</p>
+      </a>
+    </div>
+  </div>
+
 </body>
 </html>
-<!DOCTYPE html>
-<html>
-<head>
-<title>My Profile</title>
-</head>
-
-<body>
-
-<h1>My Profile</h1>
-
-<p>名前：ダリル</p>
-<p>趣味：筋トレ / 英語</p>
-
-<h2>好きなこと</h2>
-
-<ul>
-<li>Workout</li>
-<li>Studying English</li>
-<li>Watching dramas</li>
-</ul>
-
-</body>
-</html>
-<button onclick="alert('押してくれてありがとう！')">
-押してみて
-</button>
