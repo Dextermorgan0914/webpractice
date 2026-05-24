@@ -270,4 +270,10 @@ flex-direction:column;
         width: 100%;
     }
 }
+@media(max-width:768px){
+    .lesson-icon img {
+        width: 100%;
+        height: auto;
+    }
+}
 }
