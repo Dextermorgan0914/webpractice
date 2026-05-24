@@ -243,6 +243,31 @@ body {
     padding-top: 20px;
     background-image: url("VScode-img/images/壁紙.png");
 }
-.lesson-wrapper {
-    background-color: #0d0d0d;
+@media(max-width:768px){
+
+h1{
+font-size:40px;
+}
+
+.nav{
+flex-direction:column;
+}
+
+.games{
+flex-direction:column;
+align-items:center;
+}
+
+.button-group{
+flex-direction:column;
+}
+@media(max-width:768px){
+    .lessons {
+        flex-direction: column;
+    }
+    
+    .lesson {
+        width: 100%;
+    }
+}
 }
