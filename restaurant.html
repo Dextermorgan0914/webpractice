@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bastille Saloon</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #0d0d0d;
+      color: #f0e6d3;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      padding: 25px 60px;
+      border-bottom: 1px solid #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      letter-spacing: 6px;
+      color: #c9a96e;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+    }
+
+    .nav-links a {
+      color: #888;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-size: 13px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #c9a96e;
+    }
+
+    .hero {
+      padding: 150px 60px;
+      border-bottom: 1px solid #333;
+    }
+
+    .tag {
+      color: #c9a96e;
+      font-size: 12px;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 80px;
+      letter-spacing: 10px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      color: #888;
+      letter-spacing: 3px;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      padding: 15px 35px;
+      border: 1px solid #c9a96e;
+      color: #c9a96e;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-size: 13px;
+      transition: all 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #c9a96e;
+      color: #0d0d0d;
+    }
+
+    section {
+      padding: 100px 60px;
+      border-bottom: 1px solid #333;
+    }
+
+    h2 {
+      font-size: 13px;
+      letter-spacing: 6px;
+      color: #c9a96e;
+      margin-bottom: 50px;
+    }
+
+    .menu-grid {
+      display: flex;
+      gap: 30px;
+    }
+
+    .menu-item {
+      border: 1px solid #333;
+      padding: 30px;
+      flex: 1;
+      transition: all 0.3s;
+    }
+
+    .menu-item:hover {
+      border-color: #c9a96e;
+      box-shadow: 0 0 20px rgba(201, 169, 110, 0.2);
+      transform: translateY(-5px);
+    }
+
+    .menu-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .menu-item p {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .menu-item span {
+      color: #c9a96e;
+      font-size: 18px;
+    }
+
+    .access-grid {
+      display: flex;
+      gap: 60px;
+    }
+
+    .access-item h3 {
+      font-size: 13px;
+      letter-spacing: 4px;
+      color: #c9a96e;
+      margin-bottom: 20px;
+    }
+
+    .access-item p {
+      color: #888;
+      line-height: 2;
+      letter-spacing: 1px;
+    }
+
+    footer {
+      padding: 40px 60px;
+      text-align: center;
+      color: #444;
+      font-size: 13px;
+      letter-spacing: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">BASTILLE SALOON</div>
+    <div class="nav-links">
+      <a href="#menu">MENU</a>
+      <a href="#access">ACCESS</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <p class="tag">EST. 1889 · SAINT DENIS</p>
+    <h1>BASTILLE<br>SALOON</h1>
+    <p class="subtitle">The finest whiskey in the West</p>
+    <a href="#menu" class="btn">VIEW MENU</a>
+  </div>
+
+  <section id="menu">
+    <h2>MENU</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Old Fashioned</h3>
+        <p>Bourbon, bitters, sugar</p>
+        <span>¥1,200</span>
+      </div>
+      <div class="menu-item">
+        <h3>Whiskey Sour</h3>
+        <p>Rye whiskey, lemon, egg white</p>
+        <span>¥1,100</span>
+      </div>
+      <div class="menu-item">
+        <h3>Dark & Stormy</h3>
+        <p>Dark rum, ginger beer, lime</p>
+        <span>¥1,000</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="access">
+    <h2>ACCESS & HOURS</h2>
+    <div class="access-grid">
+      <div class="access-item">
+        <h3>HOURS</h3>
+        <p>Mon - Thu: 18:00 - 24:00</p>
+        <p>Fri - Sat: 18:00 - 02:00</p>
+        <p>Sun: Closed</p>
+      </div>
+      <div class="access-item">
+        <h3>LOCATION</h3>
+        <p>Saint Denis, Lemoyne</p>
+        <p>Near the Grand Korrigan</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 1889 BASTILLE SALOON · ALL RIGHTS RESERVED
+  </footer>
+
+  <a href="restaurant.html">Bastille Saloon</a>
+
+</body>
+</html>

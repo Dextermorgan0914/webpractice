@@ -1,0 +1,175 @@
+
+
+
+/*.header{
+  background-color:#26d0c9;
+  height:40vh;
+}
+
+.main{
+  padding:100px 80px;
+  background-color: blue;
+  height:40vh;
+}
+.footer{
+  background-color:#ceccf3;
+  height:40vh;
+}
+
+
+li {
+  color: red;
+    font-size:40px;
+    font-family:'Alegreya Sans SC'
+  
+}
+.selected{
+    color: darkblue;
+    padding:33px 20px;
+}
+li{
+  list-style:none;
+  float:left;
+  font-size:30px;
+  padding:33px 20px;
+
+}
+.header-logo{
+  font-size:45px;
+
+}
+head.title { display:none;}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+}
+.header-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.copy-container h1{
+  font-size:140px;
+}
+.copy-container h2{
+  font-size:60px;
+} 
+*/
+body {
+  font-family: "Avenir Next";
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  background-color: #26d0c9;
+  color: #fff;
+  height: 100px;
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+.header-list li {
+  float: left;
+  padding: 33px 20px;
+}
+
+.main {
+  padding: 100px 80px;
+}
+
+.copy-container h1 {
+  font-size: 140px;
+}
+
+.copy-container h2 {
+  font-size: 60px;
+}
+
+.copy-container span {
+  color: #ff4a4a;
+}
+
+.footer {
+  background-color: #2f5167;
+  color: #fff;
+  min-height: 120px; 
+  padding: 40px;
+}
+
+.footer-logo {
+  float: left;
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+}
+/*
+.header::after,
+.footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contents::after {
+  content: "";
+  display: block;
+  clear: both;
+}*/
+.gallery img{
+  width: 200px;
+  height:200px;
+  object-fit: cover;
+  border-radius:8px;
+}
+.contents {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.gallery {
+  display: inline-block;
+}
+/*.section-title{
+  border-bottom:2px solid #0d6ea3;
+   font-size:28px;
+   padding:15px;
+   margin:50px;
+}*/
+.contact-form{
+  padding-top:100px;
+}
+.section-title{
+  border-bottom:2px solid #0d6ea3;
+  font-size:28px;
+  padding-bottom:15px;
+  margin:50px;
+
+  display:inline-block;
+}
+.contact-submit{
+  background:#dee7ec;
+  color:#889eab;
+}
+input{
+  border:1px solid #dee7ec;
+  width:400px;
+  margin-top:10px;
+  margin-bottom:30px;
+  padding:20px;
+  font-size:18px;
+}
